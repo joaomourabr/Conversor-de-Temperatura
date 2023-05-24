@@ -18,7 +18,7 @@ function conversorTempC() {
         body.style.backgroundColor = "#396a80";
         resultContainer.innerHTML += '<br><strong>Zero Absoluto! Essa temperatura é impossível de alcançar!</strong>';
     } else {
-        var color = mapRange(celsius, -273.15, 100, [0, 0, 255], [50, 200, 255], [255, 0, 0]);
+        var color = mapRange(celsius, -10, 40, [0, 0, 255], [50, 200, 255], [255, 0, 0]);
         body.style.backgroundColor = "rgb(" + color[0] + "," + color[1] + "," + color[2] + ")";
     }
 }
@@ -43,7 +43,7 @@ function conversorTempF() {
         body.style.backgroundColor = "#396a80";
         resultContainer.innerHTML += '<br><strong>Zero Absoluto! Essa temperatura é impossível de alcançar!</strong>';
     } else {
-        var color = mapRange(FtoC, -273.15, 100, [0, 0, 255], [100, 0, 255], [255, 0, 0]);
+        var color = mapRange(FtoC, -10, 40, [0, 0, 255], [100, 0, 255], [255, 0, 0]);
         body.style.backgroundColor = "rgb(" + color[0] + "," + color[1] + "," + color[2] + ")";
     }
 }
@@ -68,7 +68,7 @@ function conversorTempK() {
         body.style.backgroundColor = "#396a80";
         resultContainer.innerHTML += '<br><strong>Zero Absoluto! Essa temperatura é impossível de alcançar!</strong>';
     } else {
-        var color = mapRange(KtoC, -273.15, 100, [0, 0, 255], [100, 0, 255], [255, 0, 0]);
+        var color = mapRange(KtoC, -10, 40, [0, 0, 255], [100, 0, 255], [255, 0, 0]);
         body.style.backgroundColor = "rgb(" + color[0] + "," + color[1] + "," + color[2] + ")";
     }
 }
