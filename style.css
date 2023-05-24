@@ -31,12 +31,47 @@ button:hover {
     font-size: 20px;
 }
 
-.title-container {
+.container {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
     text-align: center;
+}
+
+.container h1 {
     margin-bottom: 20px;
 }
 
-.title-container h1 {
-    font-size: 24px;
-    font-weight: bold;
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    margin: 5px;
+}
+
+
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
 }

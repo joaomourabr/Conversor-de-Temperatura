@@ -1,6 +1,5 @@
 function conversorTempC() {
-    var celsius = parseFloat(prompt('Digite a Temp em Celsius'));
-
+    var celsius = parseFloat(document.getElementById('temperature').value);
     if (celsius < -273.15) {
         alert('Temperatura abaixo do zero absoluto (-273.15°C) não é permitida.');
         return;
@@ -24,7 +23,7 @@ function conversorTempC() {
 }
 
 function conversorTempF() {
-    var fahrenheit = parseFloat(prompt('Digite a Temp em Fahrenheit'));
+    var fahrenheit = parseFloat(document.getElementById('temperature').value);
 
     var FtoC = ((fahrenheit - 32) * 5 / 9);
     var FtoK = (((fahrenheit - 32) * 5 / 9) + 273.15);
@@ -49,7 +48,7 @@ function conversorTempF() {
 }
 
 function conversorTempK() {
-    var kelvin = parseFloat(prompt('Digite a Temp em Kelvin'));
+    var kelvin = parseFloat(document.getElementById('temperature').value);
 
     if (kelvin < 0) {
         alert('Temperatura abaixo do zero absoluto (0K) não é permitida.');
